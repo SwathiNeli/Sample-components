@@ -1,0 +1,23 @@
+<div class="accordion">
+	<ul>
+
+		<li *ngFor="let Option of AccordionData" >
+			<div class="accordion-wrapper">
+				<input type="checkbox" name="accordion" class="check-exapandable" id="chk_{{Option.Title}}">
+				<div class="title-bar">
+					<span class="title"> {{Option.Title}}</span>				
+					<label class="collpsable expand" for="chk_{{Option.Title}}">
+						<i class="fa fa-plus"></i>
+					</label>
+					<label class="collpsable collapse" for="chk_{{Option.Title}}">
+						<i class="fa fa-minus"></i>
+					</label>
+					<div class="clearfix"></div>
+				</div>				
+				<div class="content-bar">
+					{{Option.Content}}
+				</div>
+			</div>			
+		</li>
+	</ul>
+</div>

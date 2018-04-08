@@ -1,0 +1,19 @@
+<div class="slider-wrapper">
+	<ul class="slider-container" [ngStyle]="{'transform':MoveBy,'-webkit-transform':MoveBy}">
+		<li class="slide" *ngFor="let Slide of Data">
+			<div class="img-wrapper">
+				<img src="{{Slide.URL}}" alt="{{Slide.Title}}">
+			</div>
+		</li>
+	</ul>
+	<nav class="navigation">
+		<a href="" class="nav prev {{CurrentIndex==0?'disabled':''}}" (click)="GoBack($event)"> <i class="fas fa-arrow-circle-left"></i></a>
+		<a href="" class="nav next {{CurrentIndex==NumSlides-1?'disabled':''}}" (click)="MoveNext($event)"> <i class="fas fa-arrow-circle-right"></i> </a>
+		<div class="clearfix"></div>
+	</nav>
+	<ul class="dots">
+		<li class="dot {{CurrentIndex==i?'active':''}}" *ngFor="let Slide of Data; let i = index">
+			<a href="" (click)="MoveTo(i, $event)"></a>
+		</li>
+	</ul>
+</div>

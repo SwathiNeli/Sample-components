@@ -1,0 +1,60 @@
+.accordion{
+
+}
+.accordion ul{
+	list-style-type: none;
+	margin:0;
+	padding: 0;
+}
+.accordion ul >li{
+	margin:0 0 1px 0;
+}
+.accordion ul > li .title-bar{
+	padding: 10px;
+	background: #3386b7;
+}
+.accordion ul > li .title-bar .title{
+	display: inline-block;
+	float: left;
+	font-weight: bold;
+	font-size: 15px;
+	color: #fff;
+}
+.accordion ul > li .title-bar .collpsable{
+	display: inline-block;
+	float: right;
+	cursor: pointer;
+	color: #fff;
+}
+.accordion ul > li .check-exapandable{
+	display: none;
+}
+.accordion ul > li .check-exapandable + .title-bar + .content-bar{
+	max-height: 0;
+	overflow: hidden;
+	/*transition:max-height 0.5s linear;
+	-webkit-transition:max-height 0.5s linear;*/
+}
+.accordion ul > li .check-exapandable + .title-bar .collapse{
+	display: none;
+}
+.accordion ul > li .check-exapandable + .title-bar .expand{
+	display: inline-block;
+}
+.accordion ul > li .check-exapandable:checked + .title-bar + .content-bar{
+	max-height: 99999px;
+}
+.accordion ul > li .check-exapandable:checked + .title-bar .collapse{
+	display: inline-block;
+}
+.accordion ul > li .check-exapandable:checked + .title-bar .expand{
+	display: none;
+}
+
+/*.accordion ul li > .content-bar{
+	max-height: 0;
+	overflow: hidden;
+}
+.accordion ul li.active > .content-bar{
+	max-height: 99999px;
+}*/

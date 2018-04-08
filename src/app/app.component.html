@@ -1,0 +1,19 @@
+<div class="wrapper">
+
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#"> Ng5 Components </a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li *ngFor="let option of menu">
+          <a routerLink="/{{option.url}}"> {{ option.ComponentName}} </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
+  <div class="container">
+        <router-outlet></router-outlet>
+  </div>
+</div>
