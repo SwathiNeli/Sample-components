@@ -1,0 +1,38 @@
+.box-view-outer{
+	height: 300px;
+	padding: 15px 0;
+}
+
+.box-view-outer .box-view-inner{
+	border: 1px solid #eaeaea;
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+	perspective:1000px;
+}
+
+.box-view-outer .box-view-inner .overlay{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	top: 0;
+	background:rgba(0,0,0,0.5);
+	transform:rotateX(180deg);
+	-webkit-transform:rotateX(180deg);
+	transition:transform 0.75s cubic-bezier(0.22, 0.61, 0.36, 1);
+	-webkit-transition:transform 0.75s cubic-bezier(0.22, 0.61, 0.36, 1);
+	transform-origin:bottom;
+	backface-visibility:hidden;
+
+}
+
+.box-view-outer .box-view-inner .overlay .overlay-text{
+	color:#fff;
+	text-align: center;
+	padding: 25px;
+}
+.box-view-outer .box-view-inner:hover .overlay{
+	transform:rotateX(0);
+	-webkit-transform:rotateX(0);
+};

@@ -2,6 +2,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { SliderComponent } from './slider/slider.component';
 import { AccordionComponent } from './accordion/accordion.component';
 import { ModalPopupComponent } from './modal-popup/modal-popup.component';
+import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
   // map '/persons' to the people list component
@@ -12,11 +13,15 @@ const routes: Routes = [
   // map '/' to '/persons' as our default route
   {
     path: 'accordion',
-   	component: AccordionComponent,
+    component: AccordionComponent,
   },
   {
     path: 'modalpopup',
-   	component: ModalPopupComponent,
+    component: ModalPopupComponent,
+  },
+  {
+    path: '',
+    component: HomeComponent,
   },
   { path: '**', redirectTo: '/' }   
 ];

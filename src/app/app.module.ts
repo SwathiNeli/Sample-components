@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { SliderComponent } from './slider/slider.component';
 import { AccordionComponent } from './accordion/accordion.component';
 import { ModalPopupComponent } from './modal-popup/modal-popup.component';
+import { HomeComponent } from './home/home.component';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { ModalPopupComponent } from './modal-popup/modal-popup.component';
     AppComponent,
     SliderComponent,
     AccordionComponent,
-    ModalPopupComponent
+    ModalPopupComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule, appRouterModule
