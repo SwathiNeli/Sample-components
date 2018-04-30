@@ -8,6 +8,7 @@ import { SliderComponent } from './slider/slider.component';
 import { AccordionComponent } from './accordion/accordion.component';
 import { ModalPopupComponent } from './modal-popup/modal-popup.component';
 import { HomeComponent } from './home/home.component';
+import { ComingSoonComponent } from './coming-soon/coming-soon.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { HomeComponent } from './home/home.component';
     SliderComponent,
     AccordionComponent,
     ModalPopupComponent,
-    HomeComponent
+    HomeComponent,
+    ComingSoonComponent
   ],
   imports: [
     BrowserModule, appRouterModule

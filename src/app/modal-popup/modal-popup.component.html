@@ -1,3 +1,30 @@
-<div class="jumbotron">
+<!-- <div class="jumbotron">
 	<h3 class="text-center"> We're on <u>modal popup</u> page </h3>
+</div>
+ -->
+<div class="page-header">
+  <h1>Modal Popup</h1>
+</div>
+
+<div class="wrapper-dialog-box">
+	<a href="javascript:void(0);" (click)="OpenPopUp($event)" class="btn btn-primary"> Open Popup</a>
+
+	<div class="lightbox-popup" *ngIf="ShowPopUp">
+		<div class="lightbox-popup-wrapper">
+			<div class="header-area">
+				<h3> PopUp Header </h3>
+			</div>
+			<hr class="divider">
+			<div class="content-area">
+				<p> The Indian Sunderbans, with 2,114 sq. km. of mangrove forests, comprise almost 43% of the mangrove cover in the country according to a 2017 Forest Survey of India report. Other than the forests, home to about 100 Royal Bengal tigers, the creeks and river systems of the Sunderbans are also part of the reserve forest and once conferred a Ramsar site status, it will be the largest protected wetland in the country. </p>
+				<p>There are currently 26 sites in India recognised as Ramsar wetland sites of international importance, including the East Kolkata Wetlands also in West Bengal.</p>
+			</div>
+			<hr class="divider">
+			<div class="footer-area">
+				<div class="buttons-set text-right">
+					<a href="javascript:void(0);" class="btn btn-primary" (click)="ClosePopUp($event)"> Close </a>
+				</div>
+			</div>
+		</div>		
+	</div>
 </div>

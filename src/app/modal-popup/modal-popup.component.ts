@@ -7,9 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ModalPopupComponent implements OnInit {
 
+	ShowPopUp:boolean = false;
   constructor() { }
 
   ngOnInit() {
+  }
+
+  OpenPopUp( e ){
+  	e.preventDefault();
+  	this.ShowPopUp = true;
+  }
+  ClosePopUp( e ){
+  	e.preventDefault();
+  	this.ShowPopUp = false;
   }
 
 }

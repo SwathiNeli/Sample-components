@@ -2,6 +2,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { SliderComponent } from './slider/slider.component';
 import { AccordionComponent } from './accordion/accordion.component';
 import { ModalPopupComponent } from './modal-popup/modal-popup.component';
+import { ComingSoonComponent } from './coming-soon/coming-soon.component';
 import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
@@ -19,6 +20,10 @@ const routes: Routes = [
     path: 'modalpopup',
     component: ModalPopupComponent,
   },
+  {
+    path: 'comingsoon',
+    component: ComingSoonComponent,
+  },  
   {
     path: '',
     component: HomeComponent,

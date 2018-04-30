@@ -6,10 +6,39 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-
+	menu = [{
+  	ComponentName:"Slider",
+  	url:"/slider"
+  },{
+  	ComponentName:"Accordion",
+  	url:"/accordion"
+  },{
+  	ComponentName:"ModalPopup",
+  	url:"/modalpopup"
+  },{
+    ComponentName:"ToBeAdded",
+    url:"/comingsoon"
+  },{
+    ComponentName:"ToBeAdded",
+    url:"/comingsoon"
+  },{
+    ComponentName:"ToBeAdded",
+    url:"/comingsoon"
+  },{
+    ComponentName:"ToBeAdded",
+    url:"/comingsoon"
+  },{
+    ComponentName:"ToBeAdded",
+    url:"/comingsoon"
+  },{
+    ComponentName:"ToBeAdded",
+    url:"/comingsoon"
+  }];
   constructor() { }
 
   ngOnInit() {
   }
+
+  
 
 }

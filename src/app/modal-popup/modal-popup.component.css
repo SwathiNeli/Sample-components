@@ -1,0 +1,20 @@
+.wrapper-dialog-box{
+}
+.lightbox-popup{
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0,0,0,0.5);
+}
+.lightbox-popup-wrapper{
+	background:#fff;
+	max-width: 800px;
+	margin:25px auto;
+	padding: 10px;
+}
+.header-area h3,
+.footer-area h3{
+	margin: 0;
+}

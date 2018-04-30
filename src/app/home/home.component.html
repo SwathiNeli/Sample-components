@@ -3,52 +3,93 @@
 </div>
  -->
 <div class="container">
-	<div class="row">
+	<!--<div class="row">
 		<div class="col-sm-3">
 			<div class="box-view-outer">
 				<div class="box-view-inner">
 					<div class="overlay">
-						<h4 class="overlay-text"> Overlay Text </h4>
+						<h4 class="overlay-text"> SlideShow/Carousel </h4>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="col-sm-3">
 			<div class="box-view-outer">
-				<div class="box-view-inner"></div>
+				<div class="box-view-inner">
+					<div class="overlay">
+						<h4 class="overlay-text"> Accordion </h4>
+					</div>
+				</div>
 			</div>
 		</div>
 		<div class="col-sm-3">
 			<div class="box-view-outer">
-				<div class="box-view-inner"></div>
+				<div class="box-view-inner">
+					<div class="overlay">
+						<h4 class="overlay-text"> Modal PopUp/Lightbox </h4>
+					</div>
+				</div>
 			</div>
 		</div>
 		<div class="col-sm-3">
 			<div class="box-view-outer">
-				<div class="box-view-inner"></div>
+				<div class="box-view-inner">
+					<div class="overlay">
+						<h4 class="overlay-text"> To be added.. </h4>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
 	<div class="row">
 		<div class="col-sm-3">
 			<div class="box-view-outer">
-				<div class="box-view-inner"></div>
+				<div class="box-view-inner">
+					<div class="overlay">
+						<h4 class="overlay-text"> To be added.. </h4>
+					</div>
+				</div>
 			</div>
 		</div>
 		<div class="col-sm-3">
 			<div class="box-view-outer">
-				<div class="box-view-inner"></div>
+				<div class="box-view-inner">
+					<div class="overlay">
+						<h4 class="overlay-text"> To be added.. </h4>
+					</div>
+				</div>
 			</div>
 		</div>
 		<div class="col-sm-3">
 			<div class="box-view-outer">
-				<div class="box-view-inner"></div>
+				<div class="box-view-inner">
+					<div class="overlay">
+						<h4 class="overlay-text"> To be added.. </h4>
+					</div>
+				</div>
 			</div>
 		</div>
 		<div class="col-sm-3">
 			<div class="box-view-outer">
-				<div class="box-view-inner"></div>
+				<div class="box-view-inner">
+					<div class="overlay">
+						<h4 class="overlay-text"> To be added.. </h4>
+					</div>
+				</div>
 			</div>
 		</div>
-	</div>
+	</div>-->
+
+	<ul class="row">
+        <li class="col-sm-3" *ngFor="let option of menu">
+        	<div class="box-view-outer">
+				<div class="box-view-inner">
+					<!-- <div class="overlay">
+						<h4 class="overlay-text"> <a routerLink="/{{option.url}}"> {{ option.ComponentName}} </a> </h4>						
+					</div> -->
+					<a routerLink="/{{option.url}}"> {{ option.ComponentName}} </a> 
+				</div>
+			</div>
+        </li>
+      </ul>
 </div>
